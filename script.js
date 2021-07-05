@@ -42,3 +42,4 @@ var full = new mapboxgl.FullscreenControl()
 var nav = new mapboxgl.NavigationControl();
 	map.addControl(nav, 'top-left');
 
+
