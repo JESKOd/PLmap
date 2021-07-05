@@ -52,12 +52,37 @@ p {
     height: 10px;
     margin-right: 5px;
     }
-#buttons {
-    width: 50%;
-    margin: 0 auto;
-    left: 50 auto;
+.button-zg {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 20%;
+    padding: 8px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #2d2d2d;
+    background: rgba(255, 255, 255, 0.8);
+    font-family: sans-serif;
+    font-weight: bold;
     }
-.button {
+.button-pop{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 20%;
+    padding: 8px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #2d2d2d;
+    background: rgba(255, 255, 255, 0.8);
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+.button-pn {
     display: inline-block;
     position: relative;
     cursor: pointer;

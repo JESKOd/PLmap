@@ -42,4 +42,12 @@ var full = new mapboxgl.FullscreenControl()
 var nav = new mapboxgl.NavigationControl();
 	map.addControl(nav, 'top-left');
 
-
+function clickZG() {
+	location.replace("zgony.html")
+}
+function clickPN() {
+	location.replace("przyrost_ nat.html")
+}
+function clickPOP() {
+	location.replace("podstawa.html")
+}
