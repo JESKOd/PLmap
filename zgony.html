@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> PPZoPN</title>
+        <!--<link rel="shortcut icon" type="image/png" href="map.png"> -->
+        <meta charset="utf-8" />
+        <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id='map'></div>
+		<div class='map-overlay' id='features'>
+			<h2>Populacja w Polsce. Rok 2019</h2>
+			<div id='pd'><p>Najedź na województwo!</p></div></div>
+			<div class = 'map-overlay' id = 'legend'></div>
+        <div id = 'click-buttons-pop'>
+            <button class = 'button-pop' onclick = "clickPOP()">Populacja</button>
+        <div id = "click-buttons-pn">
+            <button class = 'button-pn' onclick="clickPN()">Przyrost Naturalny</button>
+        <div id = 'click-button-zg'>
+            <button class = 'button-zg' onclick="clickZG()">Zgony</button>	
+    </body>
+</html>
