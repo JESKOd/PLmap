@@ -46,7 +46,7 @@ function clickZG() {
 	location.replace("zgony.html")
 }
 function clickPN() {
-	location.replace("przyrost_ nat.html")
+	location.replace("przyrost_nat.html")
 }
 function clickPOP() {
 	location.replace("podstawa.html")
