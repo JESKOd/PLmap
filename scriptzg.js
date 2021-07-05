@@ -25,14 +25,19 @@ map.on('load', function() {});
 		legend.appendChild(item);
     }
 
-map.on('mousemove', function(e) {
-    var zgonyall = map.queryRenderedFeatures(e.point, {
-    layers: ['zgonyall']
-        });
-    
-    if (zgonyall.length > 0) {
-        document.getElementById('pd').innerHTML = '<h3><strong>' + zgonyall[0].properties.JPT_NAZWA_ + '</strong></h3><p><strong><em>' + zgonyall[0].properties.ogółem19 + '</strong> liczba zgonów</em></p>';
-        } else {
-            document.getElementById('pd').innerHTML = '<p>Najedź na województwo!</p>';
-                }
-            });
+
+var full = new mapboxgl.FullscreenControl()
+    map.addControl(full, 'top-left');
+var nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'top-left');
+        
+function clickZG() {
+    location.replace("zgony.html")
+    }
+function clickPN() {
+    location.replace("przyrost_nat.html")
+    }
+function clickPOP() {
+    location.replace("podstawa.html")
+    }
+        
