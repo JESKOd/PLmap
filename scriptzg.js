@@ -24,7 +24,16 @@ map.on('load', function() {});
 		item.appendChild(value);
 		legend.appendChild(item);
     }
-
+map.on('mousemove', function(e) {
+    var zgony = map.queryRenderedFeatures(e.point, {
+    layers: ['zgony']
+        });
+    if (zgony.length > 0) {
+        document.getElementById('pd').innerHTML = '<h3><strong>' + zgony[0].properties.JPT_NAZWA_ + '</strong></h3><p><strong><em>' + zgony[0].properties.zgonyall + '</strong> liczba zgonów</em></p>';
+        } else {
+            document.getElementById('pd').innerHTML = '<p>Najedź na województwo!</p>';
+                }
+        });
 
 var full = new mapboxgl.FullscreenControl()
     map.addControl(full, 'top-left');
