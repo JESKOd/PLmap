@@ -54,9 +54,9 @@ p {
     }
 .button-zg {
     display: inline-block;
-    position: relative;
-    bottom: -495px;
-    left: 18px;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
     cursor: pointer;
     width: 20%;
     padding: 8px;
@@ -71,9 +71,9 @@ p {
 }
 .button-pop{
     display: inline-block;
-    position: relative;
-    bottom: -475px;
-    left: 18px;
+    position:absolute;  
+    bottom: 19%;
+    left: 1%;
     cursor: pointer;
     width: 20%;
     padding: 8px;
@@ -88,9 +88,9 @@ p {
 }
 .button-pn{
     display: inline-block;
-    position: relative;
-    bottom: -485px;
-    left: 18px;
+    position: absolute;
+    bottom: 12%;
+    left: 1%;
     cursor: pointer;
     width: 20%;
     padding: 8px;
